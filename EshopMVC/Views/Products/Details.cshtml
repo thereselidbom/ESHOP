@@ -1,0 +1,22 @@
+﻿@model EshopMVC.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div class="card mb-5" style="max-width: 840px;">
+  <div class="row g-2">
+    <div class="col-md-4 ml-sm-5">
+      <img src="@Html.DisplayFor(model => model.ImageUrl)" class="img-fluid card-img-top rounded-start" alt="">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">@Html.DisplayFor(model => model.Name)</h5>
+        <p class="card-text"> @Html.DisplayFor(model => model.Description)</p>
+        <p class="text-danger price pt-2"> @Html.DisplayFor(model => model.Price):-</p>
+      </div>
+    </div>
+  </div>
+</div>
